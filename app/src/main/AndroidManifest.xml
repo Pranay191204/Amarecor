@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amarecor.pranay.amarecor">
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCeZCLH7-WGKGuMxYpAHMO553lqrUejqUQ" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.amarecor.pranay.amarecor.MainActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.amarecor.pranay.amarecor.SplashScreen"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.amarecor.pranay.amarecor.HomePage" />
+        <activity android:name="com.amarecor.pranay.amarecor.Report" />
+        <activity android:name="com.amarecor.pranay.amarecor.Expense" />
+        <activity android:name="com.amarecor.pranay.amarecor.AddReports" />
+        <activity android:name="com.amarecor.pranay.amarecor.AddExpense" />
+        <activity android:name="com.amarecor.pranay.amarecor.AddExpenseHq" />
+        <activity android:name="com.amarecor.pranay.amarecor.ReportView" />
+        <activity android:name="com.amarecor.pranay.amarecor.SeereportActivity" />
+        <activity android:name="com.amarecor.pranay.amarecor.SeeExpenseActivity" />
+        <activity android:name="com.amarecor.pranay.amarecor.ViewingExp" />
+        <activity android:name="com.amarecor.pranay.amarecor.SeeExpenseOutActivity" />
+        <activity android:name="com.amarecor.pranay.amarecor.ViewExpList" />
+        <activity android:name="com.amarecor.pranay.amarecor.OutsideExpenseView"></activity>
+    </application>
+
+</manifest>
